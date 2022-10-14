@@ -49,12 +49,12 @@ def lambda_handler(event, context):
             sns_Alert(dName, str(c), 'Critical')
     #third warning alert on 30th day      
         elif int(c) == 30:
-            sns_Alert(dName, str(c), 'Warning')
+            sns_Alert(dName, str(c), 'Certificate expires in 40 days')
     #second warning alert on 40th day
         elif int(c) == 40:
-            sns_Alert(dName, str(c), 'Warning')
+            sns_Alert(dName, str(c), 'Certificate expires in 40 days')
     #First warning alert on 50th day      
         elif int(c) == 50:
-            sns_Alert(dName, str(c), 'Warning')
+            sns_Alert(dName, str(c), 'certificate expires in 50 Days')
         else:
             print('Everything Fine..')
