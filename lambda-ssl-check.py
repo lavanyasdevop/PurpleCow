@@ -43,13 +43,13 @@ def lambda_handler(event, context):
         (c, d) = a.split(' ')
     # Critical alerts 
         if int(c) < 15:
-            sns_Alert(dName, str(c), 'Critical')
+            sns_Alert(dName, str(c), 'Please Renew the Certificate, expires in few Days')
       # Frist critical alert on 20 th day      
         elif int(c) == 20:
-            sns_Alert(dName, str(c), 'Critical')
+            sns_Alert(dName, str(c), 'Please Renew the Certificate, expires in 20 Days')
     #third warning alert on 30th day      
         elif int(c) == 30:
-            sns_Alert(dName, str(c), 'Certificate expires in 40 days')
+            sns_Alert(dName, str(c), 'Certificate expires in 30 days')
     #second warning alert on 40th day
         elif int(c) == 40:
             sns_Alert(dName, str(c), 'Certificate expires in 40 days')
